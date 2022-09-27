@@ -139,7 +139,7 @@ export function Dashboard() {
           currency: "BRL",
         }),
         lastTransaction:
-          lastTransaction === 0
+          lastTransactionEntries === 0
             ? "Não há transações"
             : `Última entrada dia ${lastTransactionEntries}`,
       },
@@ -195,7 +195,7 @@ export function Dashboard() {
               <UserInfo>
                 <Photo
                   source={{
-                    uri: user.photo,
+                    uri: "https://github.com/karenyov.png",
                   }}
                 />
                 <User>
